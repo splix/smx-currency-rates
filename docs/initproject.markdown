@@ -39,3 +39,4 @@ mvn jbi:servicemix
 INFO  ServiceUnitLifeCycle           - Starting service unit: currency-service
 [INFO] Project deployed
 
+Так как все наши модули сгенерились на основе servicemix 3.x и camel 1.x, мы будем переводить это на servicemix 4.x и camel 2.x
