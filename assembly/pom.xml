@@ -15,7 +15,7 @@
     <name>Currency Services Assembly</name>
 
     <properties>
-        <servicemix-version>3.2.3</servicemix-version>
+        <servicemix-version>4.0.0.1-fuse</servicemix-version>
     </properties>
 
     <dependencies>

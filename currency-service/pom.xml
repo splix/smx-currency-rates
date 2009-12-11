@@ -15,8 +15,8 @@
     <name>Currency Service Unit</name>
 
     <properties>
-        <servicemix-version>3.2.3</servicemix-version>
-        <camel-version>1.4.0</camel-version>
+        <servicemix-version>4.0.0.1-fuse</servicemix-version>
+        <camel-version>2.1.0</camel-version>
     </properties>
 
     <dependencies>
@@ -24,12 +24,23 @@
             <groupId>org.apache.servicemix</groupId>
             <artifactId>servicemix-camel</artifactId>
             <version>${servicemix-version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.camel</groupId>
+                    <artifactId>camel-core</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-        <dependency>
+<!--        <dependency>
             <groupId>org.apache.servicemix</groupId>
             <artifactId>servicemix-core</artifactId>
             <version>${servicemix-version}</version>
             <scope>provided</scope>
+        </dependency>-->
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-spring</artifactId>
+            <version>${camel-version}</version>
         </dependency>
     </dependencies>
 
@@ -39,8 +50,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.6</source>
+                    <target>1.6</target>
                 </configuration>
             </plugin>
             <plugin>
