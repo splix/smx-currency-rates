@@ -8,6 +8,12 @@
     <packaging>pom</packaging>
     <name>SMX Currency Rates - Parent</name>
     <url>http://github.com/dulanov/smx-currency-rates</url>
+
+    <properties>
+        <camel-version>2.1.0</camel-version>
+        <servicemix-version>3.2.3</servicemix-version>
+    </properties>
+
     <modules>
         <module>currency-service</module>
         <module>assembly</module>
